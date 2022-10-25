@@ -979,7 +979,8 @@
 		background-image: url("../../images/trophy.png");
 		background-repeat: no-repeat;
 		background-size:contain;
-		min-height:646px;
+		min-height:600px;
+		margin-left:50px;
 	}
 /* Footer */
 

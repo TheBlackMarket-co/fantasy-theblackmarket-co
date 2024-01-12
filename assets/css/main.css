@@ -112,7 +112,8 @@
 	body {
 		height: 100%;
 		background-color: #000000;
-		background-image: url("../../images/bg.jpg");
+		/*background-image: url("../../images/bg.jpg");*/
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/bg.jpg");
 		/*background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
 		background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
@@ -1064,3 +1065,27 @@
 		body.is-ie #wrapper {
 			height: 100%;
 		}
+
+/* CONFETTI */
+#emitter {
+	visibility: hidden;
+	background-color: #222;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	top: 40%;
+	left: 0%;
+  }
+  .dot-container {
+	position:absolute;
+	left:0;
+	top:0;
+	overflow:visible;
+	z-index:5000;
+	pointer-events:none;
+  }
+  .dot {
+	position: absolute;
+	pointer-events: none; /*performance optimization*/
+  }
